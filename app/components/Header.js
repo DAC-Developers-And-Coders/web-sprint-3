@@ -1,0 +1,35 @@
+const Link = ({ texto, href }) => <li><a href={href}>{texto}</a></li>
+
+function Header()
+{
+    const linkStrings = {
+        link1: {href: "#hero", texto: "Início"},
+        link2: {href: "#solution", texto: "Solução"},
+        link3: {href: "#target-audience", texto: "Público-Alvo"},
+        link4: {href: "#gallery", texto: "Galeria"},
+        link5: {href: "#team", texto: "Nossa Equipe"},
+        link6: {href: "#contact", texto: "Contato"}
+    };
+
+    const links = Object.entries(linkStrings).map(([key, link]) => (
+        <Link key={key} texto={link.texto} href={link.href} />
+    ));
+
+    console.log(links)
+    
+    return(
+        <>
+            <header className="main-header">
+                <h2>DAC - JOVI</h2>
+
+                <nav className="nav-header">
+                    <ul className="nav-header-menu">
+                        {links}
+                    </ul>
+                </nav>
+            </header>
+        </>
+    );
+}
+
+export default Header;
