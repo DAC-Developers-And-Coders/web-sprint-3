@@ -50,6 +50,7 @@
     --sizing-xl: 3rem;
     --sizing-xxl: 4rem;
     --sizing-xxxl: 5rem;
+    --sizing-4xl: 6rem;
 }
 
 html {
@@ -86,6 +87,14 @@ a {
 
 p {
     font-family: var(--regular-font);
+}
+
+input {
+    font-family: var(--regular-font);
+}
+
+button {
+    font-family: var(--bold-font);
 }
 
 section {
@@ -468,6 +477,78 @@ footer {
 footer img {
     width: 150px;
     height: fit-content;
+}
+
+
+#login {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sizing-xl);
+    align-items: center;
+    justify-content: center;
+    background: var(--color-black);
+}
+
+.img-login {
+    display: flex;
+    flex-direction: row;
+    gap: var(--sizing-xxl);
+}
+
+.img-login img {
+    width: 250px;
+}
+
+.container-login {
+    background: var(--color-white);
+    box-shadow: 0px 4px 20px 10px var(--color-white);
+    padding: var(--sizing-4xl);
+    border-radius: 12px;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sizing-lg);
+    text-align: center;
+}
+
+.form-login h1 {
+    font-size: var(--sizing-xxl);
+}
+
+.input-login input {
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.input-login input:hover {
+    scale:1.02;
+}
+
+.btn-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--sizing-lg);
+}
+
+.btn-login button {
+    width: 175px;
+    height: 60px;
+    border-radius: 12px;
+    font-size: var(--sizing-sm);
+    transition: .5s;
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+.btn-login button:hover {
+    scale: 1.04;
 }
 
 @keyframes slide {

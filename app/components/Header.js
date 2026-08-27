@@ -8,7 +8,8 @@ function Header()
         link3: {href: "#target-audience", texto: "Público-Alvo"},
         link4: {href: "#gallery", texto: "Galeria"},
         link5: {href: "#team", texto: "Nossa Equipe"},
-        link6: {href: "#contact", texto: "Contato"}
+        link6: {href: "#contact", texto: "Contato"},
+        link6: {href: "/login", texto: "Login"}
     };
 
     const links = Object.entries(linkStrings).map(([key, link]) => (
