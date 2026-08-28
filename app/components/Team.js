@@ -1,4 +1,4 @@
-function Team()
+const Team = () =>
 {
     return(
         <>

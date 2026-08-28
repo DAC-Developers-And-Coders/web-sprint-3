@@ -1,4 +1,4 @@
-function Solution()
+const Solution = () =>
 {
     return(
         <>

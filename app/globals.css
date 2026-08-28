@@ -60,6 +60,7 @@ html {
 body {
     background-color: var(--color-background);
 }
+
 ul {
     list-style: none;
 }
@@ -98,7 +99,7 @@ button {
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .main-header {
@@ -269,7 +270,8 @@ section {
 }
 
 #gallery {
-    height: 350vh;
+    min-height: 100vh;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr;
     padding-top: var(--sizing-lg);
@@ -337,6 +339,37 @@ section {
     border-radius: 10px;
     overflow: hidden;
     border: 1px solid;
+    transition: .5s;
+}
+
+.simulation-photo:hover {
+    scale: 1.02;
+}
+
+.random-photo-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.random-simulation-photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid;
+    transition: .5s;
+    width: 90%;
+}
+
+.random-simulation-photo img {
+    width: 100%;
+    display: block;
+}
+
+.random-simulation-photo:hover {
+    scale: 1.02;
 }
 
 .row-2 {
@@ -548,6 +581,28 @@ footer img {
 }
 
 .btn-login button:hover {
+    scale: 1.04;
+}
+
+.btn-random {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--sizing-lg);
+}
+
+.btn-random button {
+    width: 200px;
+    height: 60px;
+    border-radius: 12px;
+    font-size: var(--sizing-sm);
+    transition: .5s;
+    background: var(--color-black);
+    color: var(--color-white);
+    margin: 20px 20px;
+}
+
+.btn-random button:hover {
     scale: 1.04;
 }
 

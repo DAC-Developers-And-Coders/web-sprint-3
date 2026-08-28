@@ -1,6 +1,6 @@
 const Link = ({ texto, href }) => <li><a href={href}>{texto}</a></li>
 
-function Header()
+const Header = () =>
 {
     const linkStrings = {
         link1: {href: "#hero", texto: "Início"},
@@ -9,7 +9,7 @@ function Header()
         link4: {href: "#gallery", texto: "Galeria"},
         link5: {href: "#team", texto: "Nossa Equipe"},
         link6: {href: "#contact", texto: "Contato"},
-        link6: {href: "/login", texto: "Login"}
+        link7: {href: "/login", texto: "Login"}
     };
 
     const links = Object.entries(linkStrings).map(([key, link]) => (

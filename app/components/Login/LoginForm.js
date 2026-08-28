@@ -41,6 +41,13 @@ const LoginForm = () => {
             return;
         }
 
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
+        if(!emailRegex.test(username)) {
+            alert("Digite um email válido.")
+            return;
+        }
+
         const users = JSON.parse(localStorage.getItem("users")) || [];
 
         const existentUser = users.find(
@@ -90,7 +97,7 @@ const LoginForm = () => {
                     <button 
                     type= "submit">Entrar</button>
                     <button type="button"
-                     onClick={handleRegister}>Cadastrar</button>
+                    onClick={handleRegister}>Cadastrar</button>
                 </div>
             </form>
         </div>

@@ -1,4 +1,4 @@
-function TargetAudience()
+const TargetAudience = () =>
 {
     return(
         <>

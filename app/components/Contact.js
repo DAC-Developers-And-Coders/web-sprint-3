@@ -8,7 +8,7 @@ const Options = ({ link, asset, imgAlt, txt }) =>
     );
 }
 
-function Contact()
+const Contact = () =>
 {
     const links = ['https://www.linkedin.com/in/gabrielnovagapereira/', 'mailto:developersandcodersfiap@gmail.com', 'https://www.linkedin.com/in/andrevictorgoncalvesnascimento/'];
     const assets = ['./assets/images/contact/LinkedIn.jpg', './assets/images/contact/Email.jpg'];
