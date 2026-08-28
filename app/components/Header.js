@@ -15,8 +15,6 @@ const Header = () =>
     const links = Object.entries(linkStrings).map(([key, link]) => (
         <Link key={key} texto={link.texto} href={link.href} />
     ));
-
-    console.log(links)
     
     return(
         <>
